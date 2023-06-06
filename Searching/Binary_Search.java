@@ -1,4 +1,4 @@
-package Java_Practice.Searching;
+
 import java.util.*;
 
 public class Binary_Search {
