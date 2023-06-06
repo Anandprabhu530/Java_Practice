@@ -16,7 +16,6 @@ class main{
         
         //Based on cyclic sort
         int k=0;
-        // ArrayList<Integer> list = new ArrayList<>();
         while(k<arr.length){
             int cmp = arr[k] -1;
             if(arr[k]!=k+1){
