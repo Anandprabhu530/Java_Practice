@@ -1,0 +1,35 @@
+package Sorting_based_problems;
+
+import java.util.*;
+
+class main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Find the missing number between 1 to n.");
+        System.out.println("Enter the number of elements: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        
+        //Based on cyclic sort
+        int k=0;
+        while(k<arr.length){
+            int cmp = arr[k]-1;
+            if(arr[k]!=arr[cmp]){
+                int temp = arr[k];
+                arr[k] = arr[cmp];
+                arr[cmp] = temp;
+            }else{
+                k++;
+            }
+        }
+        for(int i=0;i<n;i++){
+            if(i+1!=arr[i]){
+                System.out.println("The number " + arr[i] + " should be replaced with " + (i+1));
+            }
+        }
+    }
+}
