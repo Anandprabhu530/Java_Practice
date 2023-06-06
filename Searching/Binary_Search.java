@@ -18,7 +18,7 @@ public class Binary_Search {
     }
     static void binary_search(int[] nums , int target){
         int start = 0;
-        int end = nums.length;
+        int end = nums.length-1;
         while(start<=end){
             int mid = start + (end-start)/2;
             if(nums[mid]==target){

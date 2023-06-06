@@ -12,7 +12,7 @@ public class Peak_Element {
             arr[i] = sc.nextInt();
         }
         int start = 0;
-        int end = n;
+        int end = n-1;
         while(start<end){
             int mid = start + (end - start)/2;
             if(arr[mid]>arr[mid+1]){
