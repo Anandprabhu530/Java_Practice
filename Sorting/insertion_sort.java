@@ -2,6 +2,7 @@ import java.util.*;
 class main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.println("----Insertion sort----");
         System.out.println("Enter the number of elements: ");
         int n = sc.nextInt();
         System.out.println("Enter the elements: ");
